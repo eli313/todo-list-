@@ -1,0 +1,233 @@
+@import url(./fonts.css);
+
+:root {
+  --primary-color: rgb(187, 60, 255);
+  --body-color: #fcfaec;
+  --main-black: rgb(29, 29, 29);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  font-size: 62.5%;
+  background-color: var(--body-color);
+  font-family: "iranyekan";
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header {
+  height: 10rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+i {
+  font-size: 1.4rem;
+  transition: all 0.2s ease-in;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.form-container {
+  display: flex;
+}
+
+form {
+  display: flex;
+  width: 20rem;
+  justify-content: space-evenly;
+}
+
+form input {
+  font-family: "IRANYekan";
+  flex: 1;
+  transition: all 0.2s ease-in;
+}
+
+form input:focus {
+  border: 2px solid #d4a373;
+  box-shadow: 0 0 5px 0 #d4a37390;
+  transition: box-shadow 0.2s ease-in;
+}
+
+form input {
+  border: none;
+  outline: none;
+  padding: 0.5rem 0.8rem;
+  border-radius: 5px 0 0 5px;
+  background: #fef7ef;
+  border: 1px solid #d4a373;
+  border-right: 0;
+}
+
+form button {
+  all: unset;
+  color: #d4a373;
+  cursor: pointer;
+  background: #fef7ef;
+  border-radius: 0 5px 5px 0;
+  padding: 0.5rem 0.8rem;
+  border: 1px solid #d4a373;
+  border-left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form button i:hover {
+  color: #cb8c4c;
+}
+
+.task {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  border-radius: 5px;
+  padding: 0.5rem;
+  margin: 0.5rem 0;
+  transition: all 0.2s ease-in-out;
+}
+
+.task:hover {
+  transform: scale(1.03);
+  transition: transform 0.2s ease-in-out;
+}
+
+.task i {
+  color: #fefae0;
+}
+
+.task i:hover {
+  color: rgb(187, 60, 255);
+}
+
+.task i:last-child:hover {
+  color: rgb(255, 0, 0);
+}
+
+.task li {
+  flex: 1;
+  font-size: 0.8rem;
+  color: var(--main-black);
+}
+
+.todo-container {
+  width: 20rem;
+}
+
+.task i {
+  padding: 0 0.3rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.completed li {
+  text-decoration: line-through;
+}
+
+.completed {
+  opacity: 0.5;
+}
+
+select {
+  all: unset;
+  width: 100%;
+  color: var(--primary-color);
+  background-color: #fff;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 0.8rem;
+  padding: 0.5rem 1rem;
+}
+
+.select-options {
+  cursor: pointer;
+  margin-left: 1rem;
+  position: relative;
+}
+
+.select-options::after {
+  content: "\25BC";
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 100%;
+  font-size: 1rem;
+  padding-top: 0.4rem;
+  color: var(--primary-color);
+  pointer-events: none;
+}
+
+.color-picker {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(243, 243, 243);
+  margin: 0 0.5rem;
+  padding: 0.5rem;
+  border-radius: 5px;
+  /* position: absolute; */
+  left: 51%;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.colors {
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  border: 2px solid #fff;
+  margin: 0.2rem;
+}
+
+.color-expanded {
+  /* width: 10rem; */
+  height: 15rem;
+}
+
+.task1 {
+  background-color: #eae4e9;
+}
+.task2 {
+  background-color: #fde2e4;
+}
+
+.task3 {
+  background-color: #fad2e1;
+}
+
+.task4 {
+  background-color: #e2ece9;
+}
+
+.task5 {
+  background-color: #bee1e6;
+}
+
+.task6 {
+  background-color: #dfe7fd;
+}
+
+.task6 {
+  background-color: #cddafd;
+}
+.task7 {
+  background-color: rgb(246, 233, 250);
+}
+.task8 {
+  background-color: #fcd5ce;
+}
